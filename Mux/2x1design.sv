@@ -1,6 +1,6 @@
-module mux(y, i0,i1,s);
-  output y;
-  input i0,i1,s;
+module mux(Z, A,B,S);
+  output Z;
+  input A,B,S;
   
-  assign y = (i0&!s) | (i1&s);
+  assign Z = (A&!S) | (B&S);
 endmodule
